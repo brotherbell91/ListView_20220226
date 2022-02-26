@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.hyeongjong.listview_20220226.adapters.StudentAdapter
 import com.hyeongjong.listview_20220226.datas.StudentData
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 //    학생 목록을 담을 그릇
     val mStudentList = ArrayList<StudentData>()
-
+//      나중에 넣을 때 :로 넣음
     lateinit var mAdapter : StudentAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         mStudentList.add(StudentData("유석균",1970, "경기도 성남시"))
 
         mAdapter = StudentAdapter(this, R.layout.student_list_item, mStudentList)
+
+        studentListView.adapter = mAdapter
 
     }
 }
