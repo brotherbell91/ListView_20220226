@@ -44,6 +44,9 @@ class StudentAdapter(
         txtStudentName.text = data.name
         txtAddress.text = data.address
 
+        val age = 2022 - data.birthYear + 1
+        txtAge.text = "(${age}세)"
+
 //        반영된 채로 결과로 나가게
 
         return row
