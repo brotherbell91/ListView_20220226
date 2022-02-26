@@ -2,10 +2,24 @@ package com.hyeongjong.listview_20220226
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hyeongjong.listview_20220226.datas.StudentData
 
 class MainActivity : AppCompatActivity() {
+//    학생 목록을 담을 그릇
+    val mStudentList = ArrayList<StudentData>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        mStudentList.add(StudentData("이형종",1991, "경기도 성남시"))
+        mStudentList.add(StudentData("권효영",1988, "서울시 서대문구"))
+        mStudentList.add(StudentData("김정환",1991, "경기도 성남시"))
+        mStudentList.add(StudentData("김한균",1991, "경기도 성남시"))
+        mStudentList.add(StudentData("문상현",1991, "경기도 성남시"))
+        mStudentList.add(StudentData("최다영",1988, "서울시 강서구"))
+        mStudentList.add(StudentData("최민서",1991, "서울시 송파구"))
+        mStudentList.add(StudentData("유석균",1970, "경기도 성남시"))
+
     }
 }
