@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="학생 이름 자리"
+            android:text="이형종"
             android:textColor="@color/black"
             android:textSize="20sp"/>
 
@@ -23,12 +23,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:text="(나이-n세)" />
+            android:text="(나이 32세)" />
 
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ex. 서울시 동대문구"
+        android:text="ex. 경기도 성남시"
         android:layout_marginTop="5dp"/>
+
+</LinearLayout>
